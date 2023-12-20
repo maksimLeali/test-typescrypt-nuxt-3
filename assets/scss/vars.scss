@@ -1,0 +1,47 @@
+@use 'sass:math';
+$black: #2b2b2b;
+$white: #FFFFFF;
+$bkg: #E8E3DD;
+$gray: #797979;
+$darkGray: #45413B;
+$lightGray: #B5AA99;
+$red: #d80505;
+$text:#594732;
+
+$dt:.5s;
+$de: cubic-bezier(0.000, 0.000, 0.580, 1.000);
+
+@function vh($unit){
+    @return calc(var(--vh, 1vh) * #{$unit});
+}
+@function vw($unit){
+    @return calc(var(--vw, 1vw) * #{$unit});
+}
+@function mw($unit){
+    @return calc(var(--vw, 1vw) * 100 / 20 * #{$unit});
+}
+
+$defaultBorderRadius : mw(1);
+
+@mixin media($w) {
+    @media screen and (max-width:#{$w}px) { @content; }
+}
+@mixin mediaMin($w) {
+    @media screen and (min-width:#{$w}px) { @content; }
+}
+@mixin mediaH($h) {
+    @media screen and (max-height:#{$h}px) { @content; }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+

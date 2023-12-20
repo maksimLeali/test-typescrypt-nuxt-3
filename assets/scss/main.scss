@@ -1,0 +1,55 @@
+html,body{
+    margin: 0;
+    width: 100%;
+    font-size: 10px;
+}
+
+body{
+    font-size: 10px;
+    line-height: 1.3em;
+    font-weight: 300;
+    
+    background: $bkg;
+    
+    h1,h2,h3,h4,h5,h6,p,.p,ul,ol,span{
+        margin-top: 0;
+        font-family:  Arial, sans-serif;
+        b, strong, &.bold{
+            font-weight: 600;
+        }
+        span{
+            font-size: inherit;
+            line-height: inherit;
+        }
+    }
+    h1{
+        line-height: 6.5rem;
+        font-size: 6rem;
+    }
+    h2{
+        line-height: 4.5rem;
+        font-size: 4rem;
+    }
+    h3{
+        line-height: 3.4rem;
+        font-size: 3rem;
+    }
+    h4{
+        line-height: 3rem;
+        font-size: 2.7rem;
+    }
+
+
+    p, span, summary{
+        line-height: 1.8rem;
+        font-size: 1.6rem;
+
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    
+    
+}
